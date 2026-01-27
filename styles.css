@@ -1,0 +1,45 @@
+#home{
+    height: 100vh;
+    background: linear-gradient(to right, grey, red);
+    color: white;
+    margin-bottom: 10px;
+}
+
+#about{
+    padding: top 20px; ;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+
+
+
+.card {
+
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+
+#skills{
+
+    margin-bottom: 150px;
+    
+}
+
+
+.col-lg-6{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#skills{
+    margin-top: 70px
+}
+
+#containerhome{
+
+    padding-top: 150px;
+
+}
+
