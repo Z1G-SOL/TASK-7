@@ -1,45 +1,110 @@
-#home{
-    height: 100vh;
-    background: linear-gradient(to right, grey, red);
-    color: white;
-    margin-bottom: 10px;
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif; /* Cleaner, more modern font stack */
+  color: #d1d1d1; /* Subtle grey for body text (better for eyes than pure white) */
+  /* Professional Gradient: Deep Onyx to a very subtle Midnight Red */
+  background: radial-gradient(circle at 10% 20%, #1a1a1a 0%, #0d0d0d 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-#about{
-    padding: top 20px; ;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* Very faint scarlet dust for depth, barely visible to keep it clean */
+  background-image: 
+    radial-gradient(1px 1px at 50% 50%, rgba(255, 36, 36, 0.05), transparent);
+  z-index: -1;
+}
+
+.card-box {
+  /* Darker, more solid card for a premium feel */
+  background: #161616; 
+  border-radius: 12px; /* Slightly sharper corners for professionalism */
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #2a2a2a; /* Thin, subtle border */
+}
+
+.card-box:hover {
+  transform: translateY(-4px);
+  /* A very controlled scarlet accent on hover */
+  border: 1px solid rgba(220, 38, 38, 0.5);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.1);
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; 
+  border-radius: 30%; 
+  border: 3px solid #dc2626; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 
-
-.card {
-
-   margin-left: 5px;
-   margin-right: 5px;
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Tighter tracking looks more professional */
 }
 
-
-#skills{
-
-    margin-bottom: 150px;
-    
+/* Use Scarlet as a surgical accent for headings or spans */
+.accent-text {
+    color: #dc2626; 
 }
 
-
-.col-lg-6{
-    margin-top: 70px;
-    margin-bottom: 70px;
+p {
+  line-height: 1.6;
+  color: #a3a3a3;
 }
 
-#skills{
-    margin-top: 70px
+.tag {
+  /* Minimalist tag style */
+  border: 1px solid #333;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 4px;
+  display: inline-block;
+  color: #e5e5e5;
+  background: #222;
 }
 
-#containerhome{
-
-    padding-top: 150px;
-
+.social-btn {
+  background: #dc2626; /* Professional Scarlet (Crimson) */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease;
 }
 
+.social-btn:hover {
+  background: #b91c1c; /* Darkens slightly on hover */
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+img.rounded {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+a {
+    color: #dc2626;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ef4444;
+    text-decoration: underline;
+}

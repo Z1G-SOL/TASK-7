@@ -1,0 +1,89 @@
+body {
+    /* Using the deep Onyx-to-Black radial gradient */
+    background: radial-gradient(circle at 10% 20%, #1a1a1a 0%, #0d0d0d 100%);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: #dc2626; /* Scarlet links */
+    text-decoration: none; 
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ef4444;
+}
+
+.login-container {
+    
+    background: rgba(22, 22, 22, 0.85); 
+    padding: 40px;
+    border-radius: 12px; 
+    border: 1px solid rgba(220, 38, 38, 0.2); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); 
+    width: 350px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em; 
+    color: #ffffff;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #fafafa; /* Muted grey for labels */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    /* Darker inputs to sit well on the dark container */
+    border: 1px solid #2a2a2a;
+    background: #0d0d0d;
+    color: white;
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #dc2626; /* Scarlet focus ring */
+    box-shadow: 0 0 8px rgba(220, 38, 38, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #dc2626; /* Primary Scarlet */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b91c1c; /* Darker Crimson on hover */
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
+    transform: translateY(-2px);
+}
